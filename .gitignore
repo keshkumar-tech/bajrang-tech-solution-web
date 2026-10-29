@@ -1,0 +1,21 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/*
+!.vscode/extensions.json
+
+# Logs / temp
+*.log
+*.tmp
+*.bak
+
+# Local env & secrets (never push credentials)
+.env
+.env.*
+.php-cs-fixer.cache
+
+# Uploads (keep structure, ignore user files)
+uploads/*
+!uploads/.gitkeep

@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    padding: 60px 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section.appear {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Gradient backgrounds for different sections */
+.gradient-bg {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+}
+
+.dark-bg {
+    background-color: #333;
+    color: white;
+}
+
+.light-bg {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2575fc;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #6a11cb;
+}
+
+.case-study {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.case-study:hover {
+    transform: scale(1.02);
+}
+
+/* Animation classes */
+.fade-in-up {
+    animation: fadeInUp 0.5s forwards;
+}
+
+.fade-in-left {
+    animation: fadeInLeft 0.5s forwards;
+}
+
+.fade-in-right {
+    animation: fadeInRight 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 15px;
+    }
+
+    h1 {
+        font-size: 2rem; /* Adjusted for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjusted for smaller screens */
+    }
+
+    .read-more {
+        padding: 8px 16px; /* Adjusted padding for buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Smaller font size for very small screens */
+    }
+
+    h2 {
+        font-size: 1.3rem; /* Smaller font size for very small screens */
+    }
+
+    p {
+        font-size: 0.9rem; /* Adjusted paragraph font size */
+    }
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    padding: 60px 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section.appear {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Gradient backgrounds for different sections */
+.gradient-bg {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+}
+
+.dark-bg {
+    background-color: #333;
+    color: white;
+}
+
+.light-bg {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2575fc;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #6a11cb;
+}
+
+.case-study {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.case-study:hover {
+    transform: scale(1.02);
+}
+
+/* Animation classes */
+.fade-in-up {
+    animation: fadeInUp 0.5s forwards;
+}
+
+.fade-in-left {
+    animation: fadeInLeft 0.5s forwards;
+}
+
+.fade-in-right {
+    animation: fadeInRight 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 15px;
+    }
+
+    h1 {
+        font-size: 2rem; /* Adjusted for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjusted for smaller screens */
+    }
+
+    .read-more {
+        padding: 8px 16px; /* Adjusted padding for buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Smaller font size for very small screens */
+    }
+
+    h2 {
+        font-size: 1.3rem; /* Smaller font size for very small screens */
+    }
+
+    p {
+        font-size: 0.9rem; /* Adjusted paragraph font size */
+    }
+}

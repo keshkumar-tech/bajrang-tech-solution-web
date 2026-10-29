@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../web-agency-company"
+		},
+		{
+			"path": "../hostit-html"
+		},
+		{
+			"path": "../ecourses"
+		},
+		{
+			"path": "../etraining"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ecourses"
+	}
+}
